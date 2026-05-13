@@ -1,0 +1,66 @@
+﻿generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mysql"
+  url      = env("DATABASE_URL")
+}
+
+// =========================================================
+// User & Auth
+// =========================================================
+model User {
+  id           String   @id @default(uuid())
+  email        String   @unique
+  passwordHash String?
+  name         String
+  role         Role     @default(MANAGER)
+  createdAt    DateTime @default(now())
+  updatedAt    DateTime @updatedAt
+
+  contents     ContentItem[] @relation("ContentAuthor")
+  approvals    ContentItem[] @relation("ContentApprover")
+}
+
+enum Role {
+  OWNER
+  MANAGER
+}
+
+// =========================================================
+// Content (Phase 1: minimal â€” diperluas di fase berikutnya)
+// =========================================================
+model ContentItem {
+  id          String        @id @default(uuid())
+  title       String
+  body        String        @db.Text
+  language    Language      @default(ID)
+  platform    String?       // instagram, linkedin, facebook, wordpress, dll
+  status      ContentStatus @default(DRAFT)
+  scheduledAt DateTime?
+  publishedAt DateTime?
+
+  authorId    String
+  author      User          @relation("ContentAuthor", fields: [authorId], references: [id])
+
+  approverId  String?
+  approver    User?         @relation("ContentApprover", fields: [approverId], references: [id])
+
+  createdAt   DateTime      @default(now())
+  updatedAt   DateTime      @updatedAt
+}
+
+enum Language {
+  ID
+  EN
+}
+
+enum ContentStatus {
+  DRAFT
+  PENDING_REVIEW
+  APPROVED
+  SCHEDULED
+  POSTED
+  ARCHIVED
+}
