@@ -1,0 +1,307 @@
+# =====================================================================
+# Maritime Lentera — Brand Brief Configuration
+# =====================================================================
+# Versi: 0.2
+# Format: YAML untuk parsing oleh backend AI Content Generator
+# Fields dengan nilai null = TBD/belum tersedia. AI akan handle gracefully.
+# Update Bagian `dynamic_info` minimal 2x/minggu (Bab 3.3 Dokumen v2.0).
+# =====================================================================
+
+meta:
+  version: "0.2"
+  last_updated: "2026-05-14"
+  updated_by: "Owner"
+
+# === 1. IDENTITAS PERUSAHAAN ===
+company:
+  legal_name: "PT. Lentera Segara Indonesia"
+  brand_name: "Maritime Lentera"
+
+  short_description: |
+    Maritime Lentera adalah konsultan teknis maritim yang berdiri sejak 2015
+    di Jakarta. Bermula sebagai subkontraktor pembangunan fiber boat,
+    berkembang menjadi konsultan komprehensif untuk konstruksi kapal,
+    desain & perencanaan, serta pengawasan pembangunan dan perbaikan kapal.
+
+  founded_year: 2015
+
+  founder:
+    name: "Ahlan Zulfakhri"
+    title: null  # TBD: Founder & CEO? Managing Director?
+    linkedin_personal: "https://www.linkedin.com/in/ahlan-zulfakhri-37925042/"
+
+  tagline: "Experienced and Deliver Trusted Maritime and Shipbuilding Solutions"
+
+  mission:
+    en: "To deliver trusted, innovative, and effective maritime solutions through expert consultation, strategic planning, and dedicated project supervision."
+    id: "Memberikan solusi maritim yang terpercaya, inovatif, dan efektif melalui konsultasi ahli, perencanaan strategis, dan pengawasan proyek yang berdedikasi."
+
+  vision:
+    en: "To be the leading model of excellence in maritime and shipbuilding consultancy across Southeast Asia and beyond."
+    id: "Menjadi panutan keunggulan konsultasi maritim dan konstruksi kapal di Asia Tenggara dan kawasan yang lebih luas."
+
+  values:
+    - name: "Integrity"
+      id_name: "Integritas"
+      description: "Setiap statement teknis didukung data. Honesty over hype."
+    - name: "Precision"
+      id_name: "Presisi"
+      description: "Bahasa teknis akurat. Angka dan spesifikasi tepat."
+    - name: "Long-term Partnership"
+      id_name: "Kemitraan Jangka Panjang"
+      description: "Bukan konten transaksional. Membangun trust untuk relasi panjang."
+
+  offices:
+    - city: "Jakarta Selatan"
+      address: "Gedung Aldeoz Lantai 3, Jl. Warung Jati Barat No.39, Kelurahan Kalibata, Kec. Pancoran, Kota Adm. Jakarta Selatan, Provinsi DKI Jakarta"
+    - city: "Batam"
+      address: "Jupiter Residence B2 No 10, Tanjung Riau Sekupang, Batam, Kepulauan Riau"
+
+  achievements:
+    completed_projects: "1,000+"
+    happy_clients: "358+"
+    awards: "25+"
+    worldwide_offices: "10+"
+
+  milestones:
+    - year: 2015
+      event: "Maritime Lentera berdiri di Jakarta sebagai subkontraktor pembangunan fiber boat"
+    - year: 2017
+      event: "Bertransisi menjadi kontraktor pembangunan kapal Fiber dan Aluminum untuk pemerintah dan BUMN"
+    - year: 2019
+      event: "Memasuki area supervisi dengan proyek KAL 28"
+    - year: 2021
+      event: "Memperluas ke pembangunan tug & barge vessels"
+
+# === 2. KONTAK (null = belum tersedia, AI tidak boleh invent) ===
+contacts:
+  website: "https://maritimelentera.com"
+  email: null
+  whatsapp: null
+  linkedin_personal: "https://www.linkedin.com/in/ahlan-zulfakhri-37925042/"
+  linkedin_company: null  # Perusahaan belum punya company page
+  instagram: null
+  facebook: null
+  tiktok: null
+  twitter: null
+  youtube: null
+
+# === 3. LAYANAN ===
+services:
+  primary:
+    - name: "Ship Construction Consultation"
+      description: "Konsultasi teknis pembangunan kapal baru"
+    - name: "Ship Design & Planning"
+      description: "Desain dan perencanaan kapal dari konsep hingga blueprint detail"
+    - name: "Construction Supervision"
+      description: "Pengawasan pembangunan kapal di galangan (multi-shipyard supervision)"
+    - name: "Repair Supervision"
+      description: "Pengawasan perbaikan dan modifikasi kapal"
+
+  heritage:
+    - name: "Fiber & Aluminum Boat Construction"
+      since: 2017
+      segment: "Pemerintah & BUMN"
+    - name: "KAL (Kapal Angkatan Laut) Supervision"
+      since: 2019
+      segment: "TNI AL"
+    - name: "Tug & Barge Vessel New Building"
+      since: 2021
+      segment: "Komersial (mining, offshore)"
+
+  specializations:
+    - "Functional & ergonomic vessel design"
+    - "Hydrodynamic ship design (fuel efficiency optimization)"
+    - "Long-lasting ship design untuk commercial vessels"
+
+  vessel_types:
+    - "Fiber boat"
+    - "Aluminum boat"
+    - "KAL (Kapal Angkatan Laut)"
+    - "Patrol craft"
+    - "Tug"
+    - "Barge"
+    - "Passenger vessels"
+    - "Commercial fleets"
+
+  not_offered: []  # TBD - Owner perlu definisikan. Saat ini AI akan extra hati-hati.
+
+  certifications: []  # TBD - BKI member? IACS? ISO?
+
+# === 4. TARGET AUDIENS ===
+audience:
+  primary:
+    segments:
+      - "Pemerintah (Kemenhub, TNI AL, Bakamla, KKP, Pemda)"
+      - "BUMN sektor maritim (Pelni, ASDP, Pertamina Shipping)"
+      - "Operator komersial tug & barge (mining, offshore, port operations)"
+      - "Galangan kapal yang butuh konsultan eksternal"
+    decision_maker_profile:
+      age_range: "35-60"
+      roles: ["Owner", "Direktur Operasional", "Project Manager", "Pejabat Pengadaan"]
+      familiar_with_technical_jargon: true
+
+  secondary:
+    - "Surveyor klasifikasi (BKI, ABS, BV, LR, DNV, ClassNK)"
+    - "Naval architect & marine engineer"
+    - "Mahasiswa Teknik Perkapalan"
+    - "Asosiasi: INSA, Iperindo"
+
+# === 5. TONE OF VOICE ===
+tone:
+  personality:
+    - "Otoritatif"
+    - "Berpengalaman"
+    - "Edukatif"
+    - "Pragmatis"
+    - "Profesional formal namun approachable"
+
+  spectrum:
+    formality_0to100: 30        # 0=formal corporate, 100=casual
+    technicality_0to100: 25     # 0=technical, 100=layman
+    seriousness_0to100: 25      # 0=serious, 100=humorous
+    voice_style_0to100: 40      # 0=corporate "kami", 100=personal "saya"
+    sales_approach_0to100: 80   # 0=hard-sell, 100=educational
+    language_mix_0to100: 50     # 0=full Indonesia, 100=full English
+
+  do_examples:
+    en:
+      - "Navigating the complexities of shipbuilding and maritime solutions requires a partner you can trust."
+      - "We bring nearly twelve years of dedicated experience and a proven track record to every project."
+      - "Our approach bridges the gap between theory and real-world usability."
+      - "Importantly, a well-defined ship design workflow helps minimize risks."
+
+    id:
+      - "Menavigasi kompleksitas konstruksi kapal membutuhkan mitra yang dapat dipercaya."
+      - "Hampir 12 tahun pengalaman kami adalah jaminan bahwa setiap proyek tidak dimulai dari nol."
+      - "Spesifikasi yang bagus di kertas, harus terbukti efisien di laut."
+      - "Supervisi yang baik adalah investasi — bukan biaya tambahan."
+
+    founder_voice:
+      - "Setelah hampir 12 tahun di industri ini, satu prinsip yang tidak pernah berubah: [...]"
+      - "Dari pengalaman supervisi proyek [tipe], saya belajar bahwa [...]"
+      - "Pertanyaan yang sering saya terima dari klien tug & barge: [...]"
+
+  dont_examples:
+    - "Slang berlebihan (auto, kuy, bestie, no debat)"
+    - "Klaim superlatif tanpa data (terbaik di Indonesia, nomor 1) — kecuali ada referensi konkret"
+    - "Hard-sell agresif (BURUAN, emoji api, PROMO TERAKHIR)"
+    - "Janji vague (solusi terbaik, kualitas terjamin) tanpa parameter konkret"
+    - "Mengutip pendapat Pak Ahlan tanpa label jelas"
+
+# === 6. PLATFORM ===
+platforms:
+  active:
+    - id: "linkedin_personal"
+      name: "LinkedIn (Ahlan Zulfakhri - Founder)"
+      voice: "founder_first_person"   # "Saya...", bukan "Kami..."
+      default_language: "bilingual_en_primary"
+      content_focus: "thought_leadership, founder_insights, industry_commentary"
+    - id: "blog"
+      name: "Blog maritimelentera.com"
+      url: "https://maritimelentera.com"
+      voice: "corporate"
+      default_language: "bilingual"
+      content_focus: "educational_technical, case_studies"
+
+  pending:
+    - id: "instagram"
+      reason: "Account belum dibuat"
+    - id: "facebook"
+      reason: "Account belum dibuat"
+    - id: "tiktok"
+      reason: "Account belum dibuat"
+    - id: "x"
+      reason: "Account belum dibuat"
+    - id: "linkedin_company"
+      reason: "Company page belum dibuat"
+    - id: "youtube"
+      reason: "Channel belum dibuat"
+
+# === 7. PILAR KONTEN ===
+content_pillars:
+  - id: "vessel_design"
+    name: "Vessel Design"
+    description: "Prinsip desain, workflow konsep ke blueprint, hidrodinamika, ergonomi"
+    frequency: "2x/minggu"
+    status: "active"
+  - id: "project_management"
+    name: "Project Management"
+    description: "Manajemen proyek perkapalan, supervisi pembangunan"
+    frequency: "1x/minggu"
+    status: "active"
+  - id: "construction_supervision"
+    name: "Ship Construction & Supervision"
+    description: "Case study, quality control di galangan"
+    frequency: "1-2x/minggu"
+    status: "proposed"
+  - id: "founder_journey"
+    name: "Heritage & Founder Journey"
+    description: "Cerita Maritime Lentera 2015→kini, insight Pak Ahlan"
+    frequency: "1x/minggu"
+    status: "proposed"
+    primary_platform: "linkedin_personal"
+  - id: "industry_insight"
+    name: "Industry Insight"
+    description: "Regulasi maritim, tren industri Asia Tenggara, isu IMO"
+    frequency: "1x/minggu"
+    status: "proposed"
+
+# === 8. AI GUARDRAILS ===
+ai_rules:
+  forbidden_topics:
+    - "Politik domestik & geopolitik"
+    - "Nama kompetitor langsung atau perbandingan head-to-head"
+    - "Klaim hukum/regulasi yang belum di-cross-check"
+    - "Keuangan internal Maritime Lentera (revenue, profit, gaji, kontrak)"
+    - "Klien tanpa izin tertulis (NDA)"
+    - "Topik agama, SARA, gender, orientasi seksual"
+
+  never_invent:
+    - "Phone numbers atau WhatsApp numbers (jika contacts.whatsapp null, jangan tulis nomor apa pun)"
+    - "Email addresses (jika contacts.email null, arahkan ke website saja)"
+    - "Social media handles (jika contact null, jangan tulis @apapun)"
+    - "Nama proyek spesifik yang tidak terdaftar di services.heritage"
+    - "Nama klien spesifik yang tidak ter-approve di dynamic_info.approved_clients_to_mention"
+    - "Angka finansial spesifik (revenue, kontrak value, gaji)"
+    - "Tanggal/timeline spesifik proyek yang tidak diberikan"
+    - "Sertifikasi/award spesifik (kecuali tercantum di achievements)"
+
+  on_missing_contact:
+    rule: "Saat user request konten dengan CTA yang butuh kontak null, gunakan hanya yang available. Prioritas fallback: website > linkedin_personal > tidak ada CTA kontak."
+
+  on_missing_field:
+    rule: "Saat field penting null untuk task tertentu, beritahu user dengan ramah: 'Informasi [X] belum tersedia di Brand Brief. Apakah Anda ingin Owner update dulu, atau saya proceed dengan asumsi default?'"
+
+  approval_required_owner_level_2:
+    - "Pengumuman tender / kontrak besar"
+    - "Konten menyebut nama klien (cross-check dynamic_info.approved_clients_to_mention dulu)"
+    - "Statement regulasi/hukum maritim"
+    - "Konten dengan angka finansial spesifik"
+    - "Konten respons isu publik / krisis"
+    - "Konten mengutip pendapat personal Owner/Founder"
+
+# === 9. DYNAMIC INFO (Owner Update Berkala) ===
+dynamic_info:
+  last_updated: null
+  updated_by: null
+
+  approved_clients_to_mention: []
+  # Format: array of strings, contoh:
+  # - "PT. ABC Shipping (proyek tug 2024, sudah dapat izin)"
+
+  active_projects: []
+  # Format:
+  # - name: "Pembangunan Tug 1500HP"
+  #   client: "PT. XYZ Mining"
+  #   status: "ongoing"
+  #   can_mention_client_name: false
+
+  recent_achievements: []
+  # - "Penyerahan KAL 30 ke TNI AL pada [tanggal]"
+
+  upcoming_events: []
+  # - "INAMARINE Expo 2026 - 15-17 Juni 2026, JCC"
+
+  sensitive_topics_this_period: []
+  # - "Isu X yang sedang berkembang dan belum waktunya dikomentari"

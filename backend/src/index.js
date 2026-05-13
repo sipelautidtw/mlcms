@@ -1,7 +1,8 @@
-﻿import "dotenv/config";
+import "dotenv/config";
 import express from "express";
 import cors from "cors";
 import healthRouter from "./routes/health.js";
+import chatRouter from "./routes/chat.js";
 
 const app = express();
 const PORT = process.env.PORT || 3001;
@@ -16,13 +17,14 @@ app.use(
 app.use(express.json({ limit: "10mb" }));
 
 app.use("/api/health", healthRouter);
+app.use("/api/chat", chatRouter);
 
-// 404 handler
+// 404 handler untuk /api/*
 app.use("/api", (req, res) => {
   res.status(404).json({ error: "Endpoint not found" });
 });
 
-// Error handler
+// Error handler global
 app.use((err, req, res, next) => {
   console.error("[error]", err);
   res.status(500).json({ error: "Internal server error" });
